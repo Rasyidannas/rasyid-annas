@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-20 text-secondary-50 font-monospace;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply py-4 px-6 text-labels text-secondary-10;
+  }
+}
