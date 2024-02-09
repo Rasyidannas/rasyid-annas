@@ -4,13 +4,13 @@ import Footer from "../components/Layouts/Footer";
 
 function RootLayout() {
   return (
-    <>
-      <TopNav />
-      <main>
+    <div className="max-h-screen overflow-hidden">
+      <TopNav className="h-[10vh]" />
+      <main className="max-h-[80vh] overflow-y-scroll overflow-x-hidden">
         <Outlet />
       </main>
-      <Footer />
-    </>
+      <Footer className="h-[10vh]" />
+    </div>
   );
 }
 

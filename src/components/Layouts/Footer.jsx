@@ -1,6 +1,6 @@
-function Footer() {
+function Footer({ className }) {
   return (
-    <footer className="border border-lines-10 flex">
+    <footer className={`border border-lines-10 flex ${className}`}>
       <ul className="flex items-center">
         <li className="nav-link border-x border-lines-10">
           <p>find me in:</p>

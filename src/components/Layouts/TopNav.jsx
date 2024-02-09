@@ -1,6 +1,8 @@
-function TopNav() {
+function TopNav({ className }) {
   return (
-    <nav className="flex text-secondary-10 border border-lines-10">
+    <nav
+      className={`flex text-secondary-10 border border-lines-10 ${className}`}
+    >
       <a href="/" className="nav-link pr-24">
         rasyid-annas
       </a>
