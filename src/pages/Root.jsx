@@ -5,11 +5,11 @@ import Footer from "../components/Layouts/Footer";
 function RootLayout() {
   return (
     <div className="max-h-screen overflow-hidden">
-      <TopNav className="h-[10vh]" />
-      <main className="max-h-[80vh] overflow-y-scroll overflow-x-hidden">
+      <TopNav className="min-h-[10vh]" />
+      <main className="h-[80vh] max-h-[80vh] border-x border-lines-10">
         <Outlet />
       </main>
-      <Footer className="h-[10vh]" />
+      <Footer className="min-h-[10vh]" />
     </div>
   );
 }

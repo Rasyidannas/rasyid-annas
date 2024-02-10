@@ -1,8 +1,8 @@
 import potrait from "../assets/potrait.svg";
 
-function Home() {
+function HomePage() {
   return (
-    <section className="flex px-12 justify-between">
+    <section className="flex px-12 justify-between w-full h-full">
       <div className="my-auto w-1/2">
         <h1 className="text-body">Hi there, I am</h1>
         <h2 className="text-headline">Rasyid Annas</h2>
@@ -45,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

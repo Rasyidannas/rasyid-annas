@@ -20,7 +20,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #607b96;
+    background-color: hsl(210, 22%, 48%);
     border: 0.25rem solid #011627;
   }
 }
@@ -28,6 +28,10 @@
 @layer components {
   .nav-link {
     @apply py-4 px-6 text-labels text-secondary-10;
+  }
+
+  .nav-link__active {
+    @apply py-4 px-6 text-labels text-secondary-40 border-b-2 border-accent-10;
   }
 
   .bg-green {
@@ -49,6 +53,27 @@
     background-color: #4d5bce;
     filter: blur(5rem);
     animation: blueMove 10s infinite;
+  }
+
+  /* code editor */
+  .experience-code pre code {
+    @apply bg-primary-30 rounded-2xl border border-lines-10 overflow-y-hidden text-code text-secondary-10;
+  }
+
+  .experience-code pre code::-webkit-scrollbar {
+    @apply h-4;
+  }
+
+  .experience-code pre code::-webkit-scrollbar-track {
+    @apply bg-primary-30 rounded-2xl;
+  }
+
+  .experience-code pre code::-webkit-scrollbar-thumb {
+    @apply rounded-2xl;
+  }
+
+  .personal-tab::-webkit-scrollbar {
+    @apply h-0;
   }
 
   /* Animation Bg Circle */
@@ -74,6 +99,7 @@
       transform: scale(1);
     }
   }
+
   @keyframes blueMove {
     0% {
       left: 60%;
@@ -83,12 +109,12 @@
     25% {
       left: 80%;
       top: 20%;
-      transform: scale(0.75);
+      transform: scale(0.8);
     }
     50% {
       left: 80%;
       top: 60%;
-      transform: scale(0.8);
+      transform: scale(1.2);
     }
     100% {
       left: 60%;
