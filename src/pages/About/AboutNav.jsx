@@ -1,25 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import GroupFolder from "../../components/UI/GroupFolder";
 import Folder from "../../components/UI/Folder";
 import File from "../../components/UI/File";
 import Button from "../../components/UI/Button";
+import TabContext from "../../store/tab-context";
 
-function AboutNav({ className, onActiveTab, onCurrentTab, data }) {
-  const [files, setFiles] = useState(["about_me"]);
+function AboutNav({ className, data }) {
+  const tabCtx = useContext(TabContext);
 
   const addedFilesHandler = (value) => {
-    const existIndex = files.indexOf(value);
-    if (existIndex < 0) {
-      setFiles((prevState) => prevState.concat(value));
-    }
-
-    onActiveTab(value);
+    tabCtx.addTab(value);
+    tabCtx.setTab(value);
   };
-
-  // this will send date to parents
-  useEffect(() => {
-    onCurrentTab(files);
-  }, [files]);
 
   return (
     <div className={`${className} flex-none border-r border-lines-10`}>

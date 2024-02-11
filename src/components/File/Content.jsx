@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-function Content({ data }) {
+function Content({ text, className }) {
   const paragraph = useRef(null);
   const [numberOfLines, setNumberOfLines] = useState(0);
 
@@ -14,10 +14,12 @@ function Content({ data }) {
 
     const estimatedLines = Math.ceil(paragraphText.length / wordsPerLine);
     setNumberOfLines(estimatedLines);
-  }, [paragraph, data]);
+  }, [paragraph, text]);
 
   return (
-    <div className="text-body px-6 py-3 text-secondary-10 flex overflow-y-scroll overflow-x-hidden">
+    <div
+      className={`text-body px-6 py-3 text-secondary-10 flex overflow-y-scroll overflow-x-hidden ${className}`}
+    >
       {/* numbers list */}
       <div className="w-6 mr-6 text-end">
         {Array.from({ length: numberOfLines + 2 }, (_, i) => (
@@ -34,7 +36,7 @@ function Content({ data }) {
       <div>
         <br></br>
         <p className="about-paragraph" ref={paragraph}>
-          {data}
+          {text}
         </p>
       </div>
     </div>
