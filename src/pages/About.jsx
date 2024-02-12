@@ -1,8 +1,8 @@
-import AboutNav from "./AboutNav";
-import Experience from "../../components/Experience/Experience";
-import TabProvider from "../../store/TabProvider";
-import AboutTab from "./AboutTab";
-import AboutContent from "./AboutContent";
+import AboutNav from "../components/About/AboutNav";
+import Experience from "../components/Experience/Experience";
+import TabProvider from "../store/TabProvider";
+import AboutTab from "../components/About/AboutTab";
+import AboutContent from "../components/About/AboutContent";
 
 function AboutPage() {
   return (

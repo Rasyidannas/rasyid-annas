@@ -2,8 +2,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import "remixicon/fonts/remixicon.css";
 import HomePage from "./pages/Home";
-import AboutPage from "./pages/About/About";
+import AboutPage from "./pages/About";
 import "highlight.js/styles/github.css";
+import ProjectsPage from "./pages/Projects";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,7 @@ function App() {
           path: "/about",
           element: <AboutPage />,
         },
+        { path: "/projects", element: <ProjectsPage /> },
       ],
     },
   ]);

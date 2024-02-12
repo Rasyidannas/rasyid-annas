@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Content from "../../components/File/Content";
+import Content from "../File/Content";
 import TabContext from "../../store/tab-context";
 
 const data = {

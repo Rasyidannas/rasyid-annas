@@ -14,7 +14,6 @@ function AboutTab() {
     tabCtx.closeTab(value);
   };
 
-  console.log(currentTab, activeTab);
   return (
     <div className="flex w-full overflow-x-scroll personal-tab flex-none">
       {currentTab.map((item, i) => (

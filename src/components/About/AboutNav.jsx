@@ -1,12 +1,13 @@
 import { useContext, useEffect, useState } from "react";
-import GroupFolder from "../../components/UI/GroupFolder";
-import Folder from "../../components/UI/Folder";
-import File from "../../components/UI/File";
-import Button from "../../components/UI/Button";
+import GroupFolder from "../UI/GroupFolder";
+import Folder from "../UI/Folder";
+import File from "../UI/File";
+import Button from "../UI/Button";
 import TabContext from "../../store/tab-context";
 
 function AboutNav({ className, data }) {
   const tabCtx = useContext(TabContext);
+  const activeTabs = tabCtx.activeTabs;
 
   const addedFilesHandler = (value) => {
     tabCtx.addTab(value);
@@ -26,6 +27,9 @@ function AboutNav({ className, data }) {
                 <File
                   title="about_me"
                   icon="ri-markdown-fill text-scondary-10 text-[1rem]"
+                  className={`${
+                    activeTabs === "about_me" && "!text-secondary-40"
+                  }`}
                 />
               </Button>
             </Folder>
@@ -39,6 +43,9 @@ function AboutNav({ className, data }) {
                 <File
                   title="skill"
                   icon="ri-markdown-fill text-scondary-10 text-[1rem]"
+                  className={`${
+                    activeTabs === "skill" && "!text-secondary-40"
+                  }`}
                 />
               </Button>
             </Folder>
@@ -52,12 +59,18 @@ function AboutNav({ className, data }) {
                 <File
                   title="high_school"
                   icon="ri-markdown-fill text-scondary-10 text-[1rem]"
+                  className={`${
+                    activeTabs === "high_school" && "!text-secondary-40"
+                  }`}
                 />
               </Button>
               <Button onClick={addedFilesHandler.bind(null, data[3])}>
                 <File
                   title="university"
                   icon="ri-markdown-fill text-scondary-10 text-[1rem]"
+                  className={`${
+                    activeTabs === "university" && "!text-secondary-40"
+                  }`}
                 />
               </Button>
             </Folder>
