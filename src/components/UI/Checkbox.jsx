@@ -1,4 +1,4 @@
-function Checkbox({ labelText, id, icon, onChange, children }) {
+function Checkbox({ labelText, id, icon, onChange, children, checked }) {
   return (
     <div className="flex items-center gap-6 text-secondary-10 relative">
       <input
@@ -7,6 +7,7 @@ function Checkbox({ labelText, id, icon, onChange, children }) {
         name={id}
         className="w-[1.125rem] h-[1.125rem] peer hidden"
         onChange={onChange}
+        checked={checked}
       />
       {/* Custom box */}
       <label

@@ -6,6 +6,7 @@ import LaravelIcon from "../Icons/Laravel";
 
 function ProjectsNav({ className }) {
   const filterCtx = useContext(FilterContext);
+  const activeFilter = filterCtx.filters;
 
   const toggleFiltersHandler = (value) => {
     filterCtx.toggleFilter(value);
@@ -20,23 +21,27 @@ function ProjectsNav({ className }) {
             labelText="HTML"
             icon="ri-html5-fill"
             onChange={toggleFiltersHandler.bind(null, "html")}
+            checked={activeFilter.includes("html")}
           />
           <Checkbox
             id="css"
             labelText="CSS"
             icon="ri-css3-fill"
             onChange={toggleFiltersHandler.bind(null, "css")}
+            checked={activeFilter.includes("css")}
           />
           <Checkbox
             id="react"
             labelText="React"
             icon="ri-reactjs-fill"
             onChange={toggleFiltersHandler.bind(null, "react")}
+            checked={activeFilter.includes("react")}
           />
           <Checkbox
             id="laravel"
             labelText="Laravel"
             onChange={toggleFiltersHandler.bind(null, "laravel")}
+            checked={activeFilter.includes("laravel")}
           >
             <LaravelIcon />
           </Checkbox>

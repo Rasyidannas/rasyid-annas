@@ -23,6 +23,10 @@ const filterReducer = (state, action) => {
       filters: newFilters,
     };
   }
+
+  if (action.type === "CLEAR") {
+    return defaultFilterState;
+  }
 };
 
 const FilterProvider = ({ children }) => {
@@ -35,9 +39,14 @@ const FilterProvider = ({ children }) => {
     dispatchFilterAction({ type: "TOGGLE", value: value });
   };
 
+  const clearFilterHandler = () => {
+    dispatchFilterAction({ type: "CLEAR" });
+  };
+
   const filterContext = {
     filters: filterState.filters,
     toggleFilter: toggleFilterHandler,
+    clearFilter: clearFilterHandler,
   };
 
   return (
