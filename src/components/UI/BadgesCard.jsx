@@ -1,3 +1,5 @@
+import LaravelIcon from "../Icons/Laravel";
+
 const BadgesCard = ({ item }) => {
   return (
     <div className="flex gap-2 absolute top-2 right-4">
@@ -28,7 +30,9 @@ const BadgesCard = ({ item }) => {
             key={i}
             className=" w-6 h-6 flex items-center justify-center rounded-sm bg-secondary-20 text-secondary-40"
           >
-            <LaravelIcon />
+            <div className="w-4 h-4">
+              <LaravelIcon />
+            </div>
           </div>
         ) : null
       )}

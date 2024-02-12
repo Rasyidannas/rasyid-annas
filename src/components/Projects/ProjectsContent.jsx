@@ -51,6 +51,53 @@ const data = [
     tags: ["html", "css", "react"],
     urlLive: "https://endearing-longma-c8021c.netlify.app/",
   },
+  {
+    title: "_time_tracking_dashboard",
+    desc: "A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.",
+    urlImg:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/dgmrkrfyzvyzwuwl7vac.jpg",
+    tags: ["html", "css", "react"],
+    urlLive: "https://time-tracking-frontendmentor.onrender.com/",
+  },
+  {
+    title: "_space_tourism_multipage",
+    desc: "This project is a fun collaboration with Scrimba and Kevin Powell! If you like, you can follow along and watch Kevin complete the project on Scrimba. Lots to learn!",
+    urlImg:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/x8skdsukkmwiwxejthio.jpg",
+    tags: ["html", "css", "react"],
+    urlLive: "https://incomparable-dragon-cd18f4.netlify.app/",
+  },
+  {
+    title: "_todo_app",
+    desc: "The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra test.",
+    urlImg:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/llcq9eiv3ney5tkxgdtu.jpg",
+    tags: ["html", "css", "react"],
+    urlLive: "https://fantastic-monstera-f7a6b0.netlify.app/",
+  },
+  {
+    title: "_ip_address_tracker",
+    desc: "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+    urlImg:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ld4kxbjoxpqpjenak8w6.jpg",
+    tags: ["html", "css", "react"],
+    urlLive: "https://sunny-snickerdoodle-c06a91.netlify.app/",
+  },
+  {
+    title: "_yelp_camp",
+    desc: "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+    urlImg:
+      "https://codewell-storage-bucket.s3.us-east-2.amazonaws.com/Yelp_Camp_Slider_Thumbnail_2_e9c095623e.jpg",
+    tags: ["html", "css", "laravel"],
+    urlLive: "https://yelpcamp-ftu6.onrender.com/camps",
+  },
+  {
+    title: "_hacker_news",
+    desc: "In this challenge, I'm using Hacker News API and I also redesigned this page own.",
+    urlImg: "https://i.ibb.co/P5b1bTk/Hacker-News-Thumb.jpg",
+    tags: ["html", "css", "react"],
+    urlLive: "https://eclectic-chebakia-9338c1.netlify.app/",
+  },
 ];
 
 function ProjectsContent() {
