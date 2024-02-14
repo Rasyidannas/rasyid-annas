@@ -4,7 +4,7 @@ import Folder from "../UI/Folder";
 import File from "../UI/File";
 import Button from "../UI/Button";
 import TabContext from "../../store/tab-context";
-import LinkFile from "../UI/LinkFIle";
+import LinkFile from "../UI/LinkFile";
 
 function AboutNav({ className, data }) {
   const tabCtx = useContext(TabContext);
