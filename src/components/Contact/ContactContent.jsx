@@ -1,6 +1,6 @@
 import { marked } from "marked";
 import hljs from "highlight.js";
-import "highlight.js/styles/a11y-dark.css";
+import "highlight.js/styles/monokai.css";
 import { useContext, useEffect } from "react";
 import ContactContext from "../../store/contact-context";
 
@@ -15,7 +15,7 @@ function ContactContent({ className }) {
     hljs.highlightAll();
   }, [name, email, message]);
 
-  const markdown = `\`\`\`js
+  const markdown = `\`\`\`javascript
   const button = document.querySelector('#sendBtn');
 
   const message = {

@@ -39,7 +39,7 @@ function Experience({ className }) {
         <h2>experience</h2>
       </div>
 
-      <div className="pl-6 pr-2 flex flex-col gap-6 overflow-y-scroll">
+      <div className="pl-6 pr-2 py-4 flex flex-col gap-6 overflow-y-scroll">
         <p className="text-code text-secondary-10">
           <span>/</span>/ work experience and testimonials:
         </p>

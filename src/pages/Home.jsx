@@ -6,13 +6,19 @@ function HomePage() {
       <div className="my-auto w-1/2">
         <h1 className="text-body">Hi there, I am</h1>
         <h2 className="text-headline">Rasyid Annas</h2>
-        <div>
-          <p className="text-subheadline text-secondary-30">
+        <div className="flex flex-col">
+          <a
+            href="/projects"
+            className="text-subheadline text-secondary-30 hover:underline transition-all"
+          >
             &gt; Front-end developer
-          </p>
-          <p className="text-subheadline text-secondary-30">
+          </a>
+          <a
+            href="https://creativesshits.onrender.com/"
+            className="text-subheadline text-secondary-30 hover:underline transition-all"
+          >
             &gt; Product designer
-          </p>
+          </a>
         </div>
         <div className="mt-12">
           <p className="text-labels text-secondary-10">

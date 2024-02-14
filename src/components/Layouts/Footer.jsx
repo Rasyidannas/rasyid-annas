@@ -5,19 +5,28 @@ function Footer({ className }) {
         <li className="nav-link border-x border-lines-10">
           <p>find me in:</p>
         </li>
-        <li className="border-x border-lines-10 nav-link">
-          <span className="text-labels text-secondary-10">
+        <li className="nav-link border-r border-lines-10">
+          <a
+            href="https://twitter.com/creativesshits"
+            className="text-labels text-secondary-10"
+          >
             <i className="ri-twitter-fill"></i>
-          </span>
+          </a>
         </li>
-        <li className="border-x border-lines-10 nav-link">
-          <span className="text-labels text-secondary-10">
+        <li className="nav-link border-r border-lines-10">
+          <a
+            href="https://web.facebook.com/rasyid.annas.79"
+            className="text-labels text-secondary-10"
+          >
             <i className="ri-facebook-fill"></i>
-          </span>
+          </a>
         </li>
       </ul>
 
-      <a className="nav-link ml-auto border-x border-lines-10">
+      <a
+        href="https://github.com/Rasyidannas"
+        className="nav-link ml-auto border-x border-lines-10"
+      >
         @Rasyidannas{" "}
         <span className="text-labels text-secondary-10">
           <i className="ri-github-fill"></i>

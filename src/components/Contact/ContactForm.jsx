@@ -60,7 +60,7 @@ const ContactForm = () => {
   return (
     <div className="border-t border-lines-10 overflow-y-scroll">
       {formSuccess ? (
-        <div className="text-center flex flex-col gap-3 mt-8">
+        <div className="text-center flex flex-col gap-3 my-8">
           <h2 className=" text-subheadline">{data.title}</h2>
           <p className="text-body text-secondary-10">{data.message}</p>
           <a
@@ -74,7 +74,7 @@ const ContactForm = () => {
         <fetcher.Form
           method="post"
           action="/contact"
-          className="w-72 mx-auto mt-8 flex flex-col gap-4"
+          className="w-72 mx-auto my-8 flex flex-col gap-4"
         >
           <TextField
             id="name"
