@@ -42,7 +42,16 @@ function TopNav({ className }) {
         </li>
       </ul>
 
-      <a className="nav-link border-x border-lines-10 ml-auto">_contact-me</a>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive
+            ? "nav-link__active ml-auto border-l border-l-lines-10"
+            : "nav-link ml-auto border-l border-l-lines-10"
+        }
+      >
+        _contact-me
+      </NavLink>
     </nav>
   );
 }

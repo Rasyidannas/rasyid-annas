@@ -76,6 +76,14 @@
     @apply h-0;
   }
 
+  .contact-code pre {
+    @apply h-full;
+  }
+
+  .contact-code pre code {
+    @apply border-t border-lines-10 bg-primary-30 text-secondary-10 text-code h-full;
+  }
+
   /* Project Card */
   .project-card {
     width: calc(33.333% - 1.5rem);

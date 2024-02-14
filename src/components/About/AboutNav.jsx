@@ -4,6 +4,7 @@ import Folder from "../UI/Folder";
 import File from "../UI/File";
 import Button from "../UI/Button";
 import TabContext from "../../store/tab-context";
+import LinkFile from "../UI/LinkFIle";
 
 function AboutNav({ className, data }) {
   const tabCtx = useContext(TabContext);
@@ -81,18 +82,14 @@ function AboutNav({ className, data }) {
       <GroupFolder title="contacts">
         <ul className="p-4 flex flex-col gap-2">
           <li className="flex items-center gap-2">
-            <span className="text-secondary-10 text-[1rem]">
-              <i className="ri-mail-fill"></i>
-            </span>
-            <p className="text-labels text-secondary-10">
-              rasshit.dsgn@gmail.com
-            </p>
+            <LinkFile
+              icon="ri-mail-fill"
+              text="rasshit.dsgn@gmail.com"
+              link="mailto:rasshit.dsgn@gmail.com"
+            />
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-secondary-10 text-[1rem]">
-              <i className="ri-map-pin-2-fill"></i>
-            </span>
-            <p className="text-labels text-secondary-10">sidoarjo, Indonesia</p>
+            <LinkFile icon="ri-map-pin-2-fill" text="sidoarjo, indonesia" />
           </li>
         </ul>
       </GroupFolder>

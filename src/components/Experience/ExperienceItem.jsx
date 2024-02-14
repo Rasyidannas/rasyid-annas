@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ExperienceHeader from "./ExperienceHeader";
 import { marked } from "marked";
 import hljs from "highlight.js";
+import "highlight.js/styles/a11y-dark.css";
 import Button from "../UI/Button";
 
 function ExperienceItem({ client }) {

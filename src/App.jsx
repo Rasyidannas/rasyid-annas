@@ -5,6 +5,7 @@ import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import "highlight.js/styles/github.css";
 import ProjectsPage from "./pages/Projects";
+import Contact, { action as contactAction } from "./pages/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,10 +15,11 @@ function App() {
       children: [
         { index: true, element: <HomePage /> },
         {
-          path: "/about",
+          path: "about",
           element: <AboutPage />,
         },
-        { path: "/projects", element: <ProjectsPage /> },
+        { path: "projects", element: <ProjectsPage /> },
+        { path: "contact", element: <Contact />, action: contactAction },
       ],
     },
   ]);
