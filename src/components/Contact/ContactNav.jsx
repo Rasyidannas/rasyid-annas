@@ -1,5 +1,5 @@
 import GroupFolder from "../UI/GroupFolder";
-import LinkFile from "../UI/LinkFIle";
+import LinkFile from "../UI/LinkFile";
 
 function ContactNav({ className }) {
   return (
