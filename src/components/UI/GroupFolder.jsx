@@ -7,9 +7,9 @@ function GroupFolder({ title, children }) {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-lines-10 sm:bg-primary-20">
       <div
-        className="cursor-pointer flex items-center gap-2 border-y border-lines-10 pl-2 pr-6 max-h-12 h-12"
+        className="cursor-pointer flex-none flex items-center gap-2 border-y border-lines-10 pl-2 pr-6 max-h-12 h-12"
         onClick={clickHandler}
       >
         <i
@@ -21,7 +21,7 @@ function GroupFolder({ title, children }) {
       </div>
 
       <div
-        className={`transition-all origin-top ${
+        className={`transition-all origin-top bg-primary-20 ${
           clicked ? "scale-y-100 h-full" : "scale-y-0 h-0"
         }`}
       >

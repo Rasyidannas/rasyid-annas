@@ -13,7 +13,9 @@ function ProjectsNav({ className }) {
   };
 
   return (
-    <div className={`${className} flex-none border-r border-lines-10`}>
+    <div
+      className={`${className} flex-none my-2 sm:my-0 border-r border-lines-10`}
+    >
       <GroupFolder title="projects">
         <div className="px-6 py-3 flex flex-col gap-2">
           <Checkbox

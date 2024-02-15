@@ -3,7 +3,7 @@ import potrait from "../assets/potrait.svg";
 function HomePage() {
   return (
     <section className="flex px-12 justify-between w-full h-full">
-      <div className="my-auto w-1/2">
+      <div className="my-auto w-full md:w-1/2">
         <h1 className="text-body">Hi there, I am</h1>
         <h2 className="text-headline">Rasyid Annas</h2>
         <div className="flex flex-col">
@@ -29,7 +29,7 @@ function HomePage() {
             <span className="text-secondary-30">const</span>{" "}
             <span className="text-accent-20">githubLink</span>
             <span> = </span>
-            <span className=" text-accent-30">
+            <span className=" text-accent-30 hover:underline transition-all">
               <a href="https://github.com/Rasyidannas">
                 “https://github.com/Rasyidannas”
               </a>
@@ -39,8 +39,8 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="w-1/2 max-h-[80vh] flex items-center justify-center">
-        <figure className="h-3/4 relative z-50">
+      <div className="md:w-1/2 max-h-[80vh] flex items-center justify-center">
+        <figure className="h-3/4 relative z-50 md:block hidden">
           <img src={potrait} className="h-full" />
         </figure>
         {/* Background gradient */}

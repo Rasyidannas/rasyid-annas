@@ -7,19 +7,20 @@ import AboutContent from "../components/About/AboutContent";
 function AboutPage() {
   return (
     <TabProvider>
-      <section className="w-full h-full flex justify-between">
+      <section className="w-full h-full flex flex-col sm:flex-row justify-between overflow-y-scroll sm:overflow-y-hidden">
+        {/* About Nav Desktop */}
         <AboutNav
-          className="w-1/4"
+          className="w-full sm:w-1/3 lg:w-1/4"
           data={["about_me", "skill", "high_school", "university"]}
         />
-        <div className="flex flex-col w-[35%]">
+        <div className="flex flex-col w-full sm:w-2/3 lg:w-[35%] border-r border-lines-10">
           {/* Tab */}
           <AboutTab />
 
           {/* Content */}
           <AboutContent />
         </div>
-        <Experience className=" w-[40%]" />
+        <Experience className="w-full sm:w-[40%]" />
       </section>
     </TabProvider>
   );

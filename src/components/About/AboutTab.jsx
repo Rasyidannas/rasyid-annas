@@ -15,11 +15,11 @@ function AboutTab() {
   };
 
   return (
-    <div className="flex w-full overflow-x-scroll personal-tab flex-none">
+    <div className="flex flex-row w-full overflow-x-scroll overflow-y-hidden personal-tab flex-none border-t border-lines-10 h-12">
       {currentTab.map((item, i) => (
         <div
           key={i}
-          className="text-secondary-10 px-4 text-labels flex-none flex items-center justify-start gap-4 border border-lines-10 h-12 w-auto overflow-hidden cursor-pointer"
+          className="text-secondary-10 px-4 text-labels flex-none flex items-center justify-start gap-4 border-r border-lines-10 h-12 sm:w-auto w-fit overflow-hidden cursor-pointer"
         >
           <h2
             className={`text-ellipsis overflow-hidden py-2 ${

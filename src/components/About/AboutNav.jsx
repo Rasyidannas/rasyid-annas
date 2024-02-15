@@ -16,7 +16,9 @@ function AboutNav({ className, data }) {
   };
 
   return (
-    <div className={`${className} flex-none border-r border-lines-10`}>
+    <div
+      className={`${className} flex flex-col gap-2 my-2 sm:my-0 sm:gap-0 flex-none border-r border-lines-10`}
+    >
       <GroupFolder title="personal-info">
         <ul className="p-4 flex flex-col gap-2">
           <li className="flex flex-col gap-2">

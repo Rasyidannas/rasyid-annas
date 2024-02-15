@@ -3,7 +3,9 @@ import LinkFile from "../UI/LinkFile";
 
 function ContactNav({ className }) {
   return (
-    <div className={`${className} flex-none border-r border-lines-10`}>
+    <div
+      className={`${className} flex flex-col gap-2 my-2 sm:my-0 sm:gap-0 flex-none border-r border-lines-10`}
+    >
       <GroupFolder title="contacts">
         <ul className="p-4 flex flex-col gap-2">
           <li className="flex items-center gap-2">

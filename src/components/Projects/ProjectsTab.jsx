@@ -15,7 +15,10 @@ function ProjectsTab() {
       {activeFilter.map((item, i) => (
         <h2 key={i}>{item};</h2>
       ))}
-      <div className="pl-4 cursor-pointer" onClick={closeHandler}>
+      <div
+        className="pl-4 cursor-pointer text-secondary-10"
+        onClick={closeHandler}
+      >
         <i className="ri-close-fill"></i>
       </div>
     </div>

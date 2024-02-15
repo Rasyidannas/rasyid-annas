@@ -33,9 +33,9 @@ function Experience({ className }) {
 
   return (
     <div
-      className={`border-b border-l border-lines-10 ${className} flex flex-col bg-primary-20`}
+      className={`border-r border-t border-lines-10 ${className} sm:hidden lg:flex flex-col bg-primary-20`}
     >
-      <div className="h-12 flex-none flex items-center px-4 border border-lines-10">
+      <div className="h-12 flex-none flex items-center px-4 border-b border-lines-10">
         <h2>experience</h2>
       </div>
 

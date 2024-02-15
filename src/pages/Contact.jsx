@@ -8,10 +8,10 @@ import ContactProvider from "../store/ContactProvider";
 const Contact = () => {
   return (
     <ContactProvider>
-      <section className="flex w-full h-full">
-        <ContactNav className="w-1/4" />
+      <section className="flex flex-col sm:flex-row w-full h-full overflow-y-scroll sm:overflow-y-hidden">
+        <ContactNav className="w-full sm:w-1/3 lg:w-1/4" />
 
-        <div className="flex flex-col w-[35%]">
+        <div className="flex flex-col w-full sm:w-2/3 lg:w-[35%] border-r border-lines-10">
           {/* Tab */}
           <ContactTab />
 

@@ -74,7 +74,7 @@ const ContactForm = () => {
         <fetcher.Form
           method="post"
           action="/contact"
-          className="w-72 mx-auto my-8 flex flex-col gap-4"
+          className=" w-3/5 lg:w-72 mx-auto my-8 flex flex-col gap-4"
         >
           <TextField
             id="name"

@@ -31,7 +31,7 @@ function ContactContent({ className }) {
 
   return (
     <div
-      className={`border-l border-lines-10 ${className} bg-primary-30 flex flex-col`}
+      className={`border-l border-lines-10 ${className} bg-primary-30 hidden lg:flex flex-col`}
     >
       <div className="h-12 flex-none flex items-center px-4 border-r border-lines-10 bg-primary-20">
         <h2>contact_info</h2>

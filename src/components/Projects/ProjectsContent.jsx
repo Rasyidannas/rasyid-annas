@@ -85,7 +85,7 @@ const data = [
   },
   {
     title: "_yelp_camp",
-    desc: "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+    desc: "Practice Colt Steele's project YelpCamp, covers everything from HTML to Advanced JS.",
     urlImg:
       "https://codewell-storage-bucket.s3.us-east-2.amazonaws.com/Yelp_Camp_Slider_Thumbnail_2_e9c095623e.jpg",
     tags: ["html", "css", "laravel"],

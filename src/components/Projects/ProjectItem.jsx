@@ -20,7 +20,7 @@ const ProjectItem = ({ item, num }) => {
 
           <a
             href={item.urlLive}
-            className="py-2 px-4 bg-lines-10 rounded self-start inline-block"
+            className="py-2 px-4 bg-lines-10 rounded self-start inline-block text-secondary-10 hover:text-secondary-40 transition-all"
           >
             view-project
           </a>
