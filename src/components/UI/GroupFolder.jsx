@@ -7,9 +7,9 @@ function GroupFolder({ title, children }) {
   };
 
   return (
-    <div className="flex flex-col bg-lines-10 sm:bg-primary-20">
+    <div className="flex flex-col">
       <div
-        className="cursor-pointer flex-none flex items-center gap-2 border-y border-lines-10 pl-2 pr-6 max-h-12 h-12"
+        className="cursor-pointer flex-none flex items-center gap-2 border-y border-lines-10 pl-2 pr-6 max-h-12 h-12 bg-lines-10 sm:bg-primary-20"
         onClick={clickHandler}
       >
         <i
