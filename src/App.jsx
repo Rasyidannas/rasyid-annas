@@ -6,12 +6,14 @@ import AboutPage from "./pages/About";
 import "highlight.js/styles/github.css";
 import ProjectsPage from "./pages/Projects";
 import Contact, { action as contactAction } from "./pages/Contact";
+import ErrorPage from "./pages/Error";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <RootLayout />,
+      errorElement: <ErrorPage />,
       children: [
         { index: true, element: <HomePage /> },
         {
