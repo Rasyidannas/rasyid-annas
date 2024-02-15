@@ -28,7 +28,7 @@ export default Contact;
 
 //send email function
 function sendEmail(subject, body) {
-  const mailtoLink = `mailto:rasshit.dsgn@gmial.com?subject=${encodeURIComponent(
+  const mailtoLink = `mailto:rasshit.dsgn@gmail.com?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
 
