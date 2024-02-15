@@ -108,7 +108,7 @@ function TopNav({ className }) {
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              isActive ? "nav-link__active w-full" : "nav-link w-full flex"
+              isActive ? "nav-link__active w-full" : "nav-link w-full"
             }
           >
             _contact
