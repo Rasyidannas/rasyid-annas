@@ -14,6 +14,7 @@ function App() {
       path: "/",
       element: <RootLayout />,
       errorElement: <ErrorPage />,
+      basename: "/rasyid-annas",
       children: [
         { index: true, element: <HomePage /> },
         {
