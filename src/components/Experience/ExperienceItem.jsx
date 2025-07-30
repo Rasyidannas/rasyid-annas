@@ -22,10 +22,10 @@ function ExperienceItem({ client }) {
 
   const markdown = `\`\`\`php
     class StoryaCompany extends Experience {
-      public $title, $testimonials;
+      public $role, $testimonials;
       
       public function __construct($title, $testimonials) {
-         $this->title = $title;
+         $this->role = $role;
          $this->testimonials = $testimonials;
       }
     }

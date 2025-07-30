@@ -8,9 +8,6 @@ function ExperienceHeader({ client, onRunning }) {
   return (
     <div className="flex justify-between gap-2">
       <div className="flex gap-3">
-        <figure className="w-10 rounded-3xl overflow-hidden">
-          <img src={client.url} />
-        </figure>
         <div>
           <p className="text-code font-bold text-secondary-30">
             @{client.name}

@@ -54,8 +54,8 @@ function TopNav({ className }) {
         to="/contact"
         className={({ isActive }) =>
           isActive
-            ? "nav-link__active ml-auto border-l border-l-lines-10 sm:block hidden"
-            : "nav-link ml-auto border-l border-l-lines-10 sm:block hidden"
+            ? "nav-link__active ml-auto border-l border-l-lines-10 sm:block hidden content-center"
+            : "nav-link ml-auto border-l border-l-lines-10 sm:block hidden content-center"
         }
       >
         _contact-me
