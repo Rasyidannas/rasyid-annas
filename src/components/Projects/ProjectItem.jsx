@@ -14,7 +14,7 @@ const ProjectItem = ({ item, num }) => {
           item.urlImg && item.pathImg 
           ?
           <figure className="w-full relative before:absolute before:block before:bg-primary-30 before:inset-0 before:opacity-20 before:hover:opacity-0 border border-lines-10">
-            <img className="w-full" src={item.urlImg || item.pathImg} />
+            <img className="w-full" src={item.pathImg || item.urlImg} />
             {/* icon badges */}
             <BadgesCard item={item} />
           </figure>
