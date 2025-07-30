@@ -15,13 +15,13 @@ const ProjectItem = ({ item, num }) => {
           item.urlImg && item.pathImg 
           ?
           <figure className="w-full relative before:absolute before:block before:bg-primary-30 before:inset-0 before:opacity-20 before:hover:opacity-0 border border-lines-10">
-            <img className="w-full" src={item.pathImg || item.urlImg} />
+            <img className="w-full" src={item.pathImg || item.urlImg}  alt={item.title}/>
             {/* icon badges */}
             <BadgesCard item={item} />
           </figure>
           :
           <div className="w-full relative before:absolute before:block before:bg-primary-30 before:inset-0 before:opacity-20 before:hover:opacity-0 border border-lines-10">
-            <img src={HackerNews} />
+            <img src={HackerNews} alt= "Not Maintained" />
             <div className="absolute inset-0 bg-primary-30 flex items-center justify-center font-bold">Not Maintained</div>
           </div>
         }
