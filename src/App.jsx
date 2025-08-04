@@ -1,12 +1,14 @@
+import * as React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import "remixicon/fonts/remixicon.css";
-import HomePage from "./pages/Home";
-import AboutPage from "./pages/About";
+const HomePage = React.lazy(() => import ("./pages/Home"));
+const AboutPage = React.lazy(() => import ("./pages/About"));
 import "highlight.js/styles/github.css";
-import ProjectsPage from "./pages/Projects";
-import Contact, { action as contactAction } from "./pages/Contact";
-import ErrorPage from "./pages/Error";
+const ProjectsPage = React.lazy(() => import ("./pages/Projects"));
+const Contact = React.lazy(() => import ("./pages/Contact"))
+import { action as contactAction } from "./pages/Contact";
+const ErrorPage = React.lazy(() => import ("./pages/Error"));
 
 function App() {
   const router = createBrowserRouter([
@@ -27,7 +29,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <React.Suspense >
+      <RouterProvider router={router} />
+    </React.Suspense>
+  );
 }
 
 export default App;

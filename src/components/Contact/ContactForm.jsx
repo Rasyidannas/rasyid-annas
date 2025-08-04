@@ -49,7 +49,6 @@ const ContactForm = () => {
 
   //this is for context
   const contactCtx = useContext(ContactContext);
-  console.log(contactCtx);
 
   useEffect(() => {
     contactCtx.setName(nameValue);
