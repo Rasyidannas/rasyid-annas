@@ -41,7 +41,7 @@ function HomePage() {
 
       <div className="md:w-1/2 max-h-[80vh] flex items-center justify-center">
         <figure className="h-3/4 relative z-50 md:block hidden">
-          <img src={potrait} className="h-full" />
+          <img src={potrait} className="h-full" alt="Rasyid Annas" />
         </figure>
         {/* Background gradient */}
         <div className="bg-green"></div>
