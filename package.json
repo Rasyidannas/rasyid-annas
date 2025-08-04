@@ -17,6 +17,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@million/lint": "^1.0.14",
     "highlight.js": "^11.9.0",
     "localforage": "^1.10.0",
     "marked": "^12.0.0",
